@@ -1,0 +1,112 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* Encabezado */
+header {
+    background: linear-gradient(to right, #007bff, #6610f2);
+    background-size: cover;
+    color: white;
+    text-shadow: 1px 1px 2px #00000070;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Contenedor principal */
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1200px;
+    margin: 40px auto;
+    flex-wrap: wrap;
+}
+
+/* Columnas */
+.column {
+    width: 22%;
+    text-align: center;
+    padding: 15px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    background: #333;
+    color: white; /* Asegurar legibilidad */
+}
+
+.column img {
+    width: 60px;
+    margin-bottom: 10px;
+}
+
+.column h3 {
+    margin-bottom: 20px;
+    color: #5a97fa;
+}
+
+.column:hover {
+    transform: translateY(-5px);
+}
+
+/* Iconos */
+.col-md-6 col-lg-3 {
+    background-color: #5a97fa; 
+    padding: 10px;
+    font-size: 50px;
+    color: #fff;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 10px;
+}
+
+/* Botones de navegación */
+.botones {
+    margin: 30px 0;
+}
+
+.boton {
+    display: inline-block;
+    padding: 10px 20px;
+    background: red;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.boton:hover {
+    background: darkred;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Pie de página */
+footer {
+    background: #333;
+    color: white;
+    padding: 10px;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .column {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}

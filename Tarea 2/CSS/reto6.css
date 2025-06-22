@@ -1,0 +1,75 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Encabezado */
+header {
+    background: linear-gradient(to right, #007bff, #6610f2);
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 24px;
+    width: 100%;
+}
+
+/* Banner */
+.banner {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url('../Imagenes/reto6.jpg'); /* Asegúrate de que la ruta es correcta */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); /* Efecto de profundidad */
+}
+
+/* Overlay para oscurecer la imagen */
+.overlay {
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    background-blend-mode: multiply;
+    color: white;
+    text-align: center;
+    padding: 50px;
+    border-radius: 10px;
+    max-width: 80%;
+    position: relative; /* Permite posicionar elementos dentro */
+}
+
+/* Botón de volver */
+.botones {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.boton {
+    display: inline-block;
+    padding: 10px 20px;
+    background: red;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.boton:hover {
+    background: darkred;
+}
+
+/* Pie de página */
+footer {
+    background: #222;
+    color: white;
+    padding: 10px;
+    font-size: 14px;
+    width: 100%;
+}
+
+

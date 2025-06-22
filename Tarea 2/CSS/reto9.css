@@ -1,0 +1,47 @@
+/* Reset */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Header */
+header {
+    background: linear-gradient(to right, #007bff, #6610f2);
+    background-size: cover;
+    color: black;
+    padding: 40px 0;
+}
+
+/* Logos */
+.logo {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+    border-radius: 10px;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+.boton.volver {
+    display: inline-block;
+    padding: 10px 20px;
+    background: red;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.boton.volver:hover {
+    background: gray;
+}
+
+/* Pie de página */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+}
