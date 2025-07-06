@@ -1,0 +1,78 @@
+:root {
+      --primary: #ff6f00;
+      --secondary: #0088cc;
+      --light: #fefefe;
+      --dark: #0a0a0a;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: var(--light);
+    }
+
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('../img/banner.jpg') no-repeat center center/cover;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: 900;
+    }
+
+    .section-title {
+      font-weight: 800;
+      color: var(--primary);
+    }
+
+    .card {
+      border: none;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+    }
+
+    .counter {
+      font-size: 2.5rem;
+      color: var(--primary);
+      font-weight: 900;
+    }
+
+    .botonScroolTop {
+    position: fixed;
+    height: 45px;
+    width: 42px;
+    background-color: red;
+    right: 30px;
+    bottom: 30px;
+    text-align: center;
+    line-height: 45px;
+    color: #fff;
+    font-size: 25px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+    footer {
+      background: var(--dark);
+      color: white;
+    }
+
+    footer a {
+      color: white;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      color: var(--primary);
+    }
