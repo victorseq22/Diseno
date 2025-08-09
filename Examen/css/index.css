@@ -1,0 +1,201 @@
+:root {
+      --primary: #ff6f00;
+      --secondary: #0088cc;
+      --light: #fefefe;
+      --dark: #0a0a0a;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: var(--light);
+    }
+
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.pexels.com/photos/2316786/pexels-photo-2316786.jpeg') no-repeat center center/cover;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: 900;
+    }
+
+    .section-title {
+      font-weight: 800;
+      color: var(--primary);
+    }
+
+    .card {
+      border: none;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+    }
+
+    .counter {
+      font-size: 2.5rem;
+      color: var(--primary);
+      font-weight: 900;
+    }
+
+    .botonScroolTop {
+    position: fixed;
+    height: 45px;
+    width: 42px;
+    background-color: red;
+    right: 30px;
+    bottom: 30px;
+    text-align: center;
+    line-height: 45px;
+    color: #fff;
+    font-size: 25px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+    footer {
+      background: var(--dark);
+      color: white;
+    }
+
+    footer a {
+      color: white;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      color: var(--primary);
+    }
+
+        header {
+      background-color: #333;
+      padding: 10px 20px;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 24px;
+    }
+
+.navbar-custom {
+  background-color: #ac5411;
+}
+
+.navbar-custom .nav-link,
+.navbar-custom .navbar-brand {
+  color: white;
+}
+
+.navbar-custom .nav-link:hover {
+  color: #ffcc00;
+}
+
+.menu-btn {
+  background-color: white;
+  border-radius: 8px;
+  padding: 5px 10px;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.menu-btn .menu-text {
+  color: #2143cc;
+  font-weight: bold;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%2833,67,204,1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+    /* Responsive: ocultar menú en pantallas pequeñas */
+    @media (max-width: 768px) {
+      nav {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 200px;
+        padding: 10px;
+      }
+
+      nav.show {
+        display: flex;
+      }
+
+      .menu-toggle {
+        display: block;
+      }
+    }
+
+    @media (max-width: 768px) {
+  .carousel-inner img {
+    height: 250px;      /* Alto más pequeño en móviles */
+  }
+}
+
+
+
+        /* Color personalizado para la barra */
+    .navbar-personalizada {
+      background-color: #1246c0; /* Azul oscuro personalizado */
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    }
+
+    .navbar-personalizada .nav-link {
+      color: #ffffff;
+    }
+
+    .navbar-personalizada .nav-link:hover {
+      color: #ffcc00;
+    }
+
+    body {
+      padding-top: 70px; /* Importante para que el contenido no quede debajo del menú fijo */
+    }
+
+    /*CAROUSEL*/
+
+
+/*tamaño de flechas*/
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 60px;
+    height: 60px;
+    /*fondo de color*/
+    background-color: #e4e4e4;
+}
+
+
+/*color de flechas*/
+/*cambiar la propiedad fill por # hexadecimal*/
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ff0000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ff0000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-inner img {
+  height: 850px;        /* Alto fijo en pantallas grandes */
+  object-fit: cover;    /* Recorta la imagen sin deformar */
+}
