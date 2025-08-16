@@ -1,0 +1,85 @@
+$font-main: 'Cooper Black', 'Luckiest Guy', cursive;
+$color-yellow: #FFD23C;
+$color-red: #B22222;
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: rgba(100, 100, 100, 0.4) !important;
+  backdrop-filter: blur(5px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+
+  .logo {
+    font-family: $font-main;
+    font-size: 1.5rem;
+    color: $color-yellow;
+    -webkit-text-stroke: 2px $color-red;
+    text-shadow: 2px 2px 0 $color-red;
+    text-transform: uppercase;
+  }
+
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+
+    li a {
+      font-family: $font-main;
+      font-size: 1.2rem;
+      color: $color-yellow;
+      -webkit-text-stroke: 2px $color-red;
+      text-shadow: 2px 2px 0 $color-red;
+      text-transform: uppercase;
+      text-decoration: none;
+      transition: all 0.2s ease-in-out;
+
+      &:hover {
+        color: lighten($color-yellow, 10%);
+        text-shadow: 3px 3px 0 darken($color-red, 10%);
+      }
+    }
+  }
+
+  /* 🔹 Estilos para el botón hamburguesa */
+  .navbar-toggler {
+    border: none;
+    background: transparent;
+
+    &:focus {
+      box-shadow: none;
+    }
+
+    .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'><path stroke='rgb(255,255,0)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+      /* en este caso amarillo (255,255,0), puedes cambiarlo a $color-yellow */
+    }
+  }
+}
+
+
+.hero {
+  height: 100vh;
+  background: url('https://images.pexels.com/photos/32392985/pexels-photo-32392985.jpeg') center/cover no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  p {
+    font-size: 1.3rem;
+    margin-top: 10px;
+  }
+}

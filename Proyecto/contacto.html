@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <title>Heladeria</title> 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="imagenes/favicom.jpg" rel="icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+    <link href="css/reglas.css" rel="stylesheet">
+    <link href="css/nav.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- carga de la libreria ANIMATE.CSS CDN -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+    <!--Libreria de iconos web CSS-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">   
+</head>
+
+<body id="inicio">
+<header>
+<nav class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <div class="logo">Glaces Artisanales</div>
+
+    <!-- Botón hamburguesa -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Menú -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="nav-links navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="inicio.html">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="Nosotros.html">Nosotros</a></li>
+        <li class="nav-item"><a class="nav-link" href="Menu.html">Menú</a></li>
+        <li class="nav-item"><a class="nav-link" href="Galeria.html">Galería</a></li>
+        <li class="nav-item"><a class="nav-link" href="Promociones.html">Promociones</a></li>
+        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+</header>
+
+<section class="hero">
+</section>
+
+    <!-- Seccion formulario de contacto  -->
+
+    <section id="nosotros" class="container-fluid fondo2 text-center sct-reservaciones py-5">
+        <h2 class="titform1 mb-4">Contacto</h2>
+        <p data-translate="form">Complete el siguiente formulario si desea contactarnos</p>
+      
+        <form id="form1" role="form" class="mt-5">
+          <div class="row mb-3">
+            <div class="col-md-6 mb-3">
+              <label for="nombreTxt" class="form-label" >Nombre</label>
+              <input type="text" class="form-control rounded" id="nombreTxt" name="name" required placeholder="Ingrese su nombre" aria-label="Nombre">
+            </div>
+            <div class="col-md-6 mb-3">
+              <label for="apellidoTxt" class="form-label" data-translate="lastname">Apellido</label>
+              <input type="text" class="form-control rounded" id="apellidoTxt" name="lastname" required placeholder="Ingrese su apellido" aria-label="Apellido">
+            </div>
+          </div>
+      
+          <div class="row mb-3">
+            <div class="col-md-6 mb-3">
+              <label for="emailTxt" class="form-label">Email</label>
+              <input type="email" class="form-control rounded" id="emailTxt" name="email" required placeholder="ejemplo@correo.com" aria-label="Correo electrónico">
+            </div>
+            <div class="col-md-6 mb-3">
+              <label for="phoneTxt" class="form-label" >Teléfono</label>
+              <input type="tel" class="form-control rounded" id="phoneTxt" name="phone" required pattern="[0-9]{4}-[0-9]{4}" placeholder="8888-8888" aria-label="Teléfono">
+            </div>
+          </div>
+      
+          <div class="mb-3">
+            <label for="mensajeTxt" class="form-label">Mensaje</label>
+            <textarea class="form-control rounded" id="mensajeTxt" name="message" rows="4" required placeholder="Escriba su mensaje aquí..." aria-label="Mensaje"></textarea>
+          </div>
+      
+          <div class="text-center">
+            <p id="mensajeAlert" class="text-success"></p>
+            <button type="submit" id="btnSend" class="btn btn-primary px-5 py-2 mt-3">Enviar</button>
+          </div>
+        </form>
+      </section>
+
+    <section id="nosotros" class="container-fluid seccion2 py-5">
+
+    </section>
+
+
+<!-- Whatsapp -->
+    <a href="https://wa.me/50688888888" 
+   class="whatsapp-float" 
+   target="_blank" 
+   title="Chatea con nosotros en WhatsApp">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" 
+         alt="WhatsApp" width="60" height="60">
+    </a>
+
+
+    <!-- SCROLLTOP -->
+    <a href="#inicio">
+        <div class="botonScroolTop">
+            <i class="uil uil-angle-up"></i>
+        </div>
+    </a>
+
+  <!-- Footer -->
+<footer class="footer mt-5 text-white pt-4 pb-3" id="contacto">
+        <div class="container">
+          <div class="row">
+            <!-- Ubicación -->
+            <div class="col-md-3 mb-3">
+              <h5><i class="fas fa-map-marker-alt me-2"></i>Ubicación</h5>
+              <p>Coronado, San Jose</p>
+              <p>Costa Rica</p>
+            </div>
+      
+            <!-- Horario -->
+            <div class="col-md-3 mb-3">
+              <h5><i class="fas fa-clock me-2"></i>Horario</h5>
+              <p>Lunes a Domingo<br>8:00 AM - 9:30 PM</p>
+            </div>
+      
+            <!-- Contacto -->
+            <div class="col-md-3 mb-3">
+              <h5><i class="fas fa-phone-alt me-2"></i>Contacto</h5>
+              <p>+506 84195210<br>info@glacesartisanales.com</p>
+            </div>
+      
+            <!-- Redes Sociales -->
+            <div class="col-md-3 mb-3">
+              <h5><i class="fas fa-share-alt me-2"></i>Redes Sociales</h5>
+              <div class="d-flex gap-3">
+                <a href="https://es-la.facebook.com/login/web/" class="text-white fs-4" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/accounts/login/" class="text-white fs-4" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                <a href="https://x.com/?lang=es" class="text-white fs-4" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.tiktok.com/es/" class="text-white fs-4" target="_blank" rel="noopener noreferrer"><i class="fab fa-tiktok"></i></a>
+              </div>
+            </div>
+          </div>
+      
+          <hr style="border-color: rgba(255,255,255,0.2);">
+          <div class="text-center small">
+            &copy; Glaces Artisanales 2025. Todos los derechos reservados.
+          </div>
+        </div>
+      </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        var myCarousel = document.querySelector('#carouselExampleControls')
+        var carousel = new bootstrap.Carousel(myCarousel, {
+            /*tiempo 2seg*/
+            interval: 1000,
+            /*se detiene al ultimo slide con false o true para continuar viendo slides */
+            wrap: false
+        })
+    </script>
+
+</body>
+
+<!-- Modal de confirmación -->
+<div class="modal fade" id="modalConfirmacion" tabindex="-1" aria-labelledby="modalConfirmacionLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content rounded-3">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalConfirmacionLabel">¡Mensaje enviado!</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body">
+        Gracias por contactarnos. Hemos recibido tu mensaje y te responderemos lo antes posible. 🙌
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-success" data-bs-dismiss="modal">Aceptar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  const form = document.getElementById("form1");
+
+  form.addEventListener("submit", function(e) {
+    e.preventDefault(); 
+
+    const modal = new bootstrap.Modal(document.getElementById('modalConfirmacion'));
+    modal.show();
+
+    form.reset();
+  });
+</script>
+</html>
